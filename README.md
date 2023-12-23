@@ -4,7 +4,7 @@
 ros2のパッケージ
 
 # リポジトリの一覧
-## talker.pyについて
+### talker.pyについて
 * データをトピックに送信するためのパブリッシャーを持つノードである。
 * 数字をカウントしてトピック（`/countup`)を通じて送信する。
 * メッセージの型は１６ビット符号付き整数
@@ -16,16 +16,16 @@ ros2のパッケージ
 ## talk_listener.launch.pyについて
 * 複数のノードを立ち上げるlaunchファイルで、talker.pyとlistener.pyを一度に立ち上げるもの。
 
-## suuretu.py
+## suuretu.pyについて
 * パブリッシャーを持つノードである。
 * 調和数列を項の数だけ足した和の数値を`harmonic_sum`を通じて送信する。
 * メッセージの型は１６ビット符号付き整数
 
-## ans.py
+## ans.pyについて
 * サブスクライバを持つノードである。
 * トピック（`harmonic_sum`)から送られてきた数値を受け取り表示する。
 
-## suuretu_ans.launch.py
+## suuretu_ans.launch.pyについて
 * 複数のノードを立ち上げるlaunchファイルで、suuretu.pyとans.pyを一度に立ち上げるもの。
 
 # 実行手順
