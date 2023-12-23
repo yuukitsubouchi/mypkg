@@ -1,36 +1,36 @@
 # ros2
-![test](https://github.com/yuukitsubouchi/ros2_ws/actions/workflows/test.yml)
-![suuretu_test](https://github.com/yuukitsubouchi/ros2_ws/actions/workflows/suuretu_test.yml)
+[![test](https://github.com/yuukitsubouchi/ros2_ws/actions/workflows/suuretu_test.yml/badge.svg)](https://github.com/yuukitsubouchi/ros2_ws/actions/workflows/suuretu_test.yml)
+[![test](https://github.com/yuukitsubouchi/ros2_ws/actions/workflows/test.yml/badge.svg)](https://github.com/yuukitsubouchi/ros2_ws/actions/workflows/test.yml)
 ros2のパッケージ
 
 ##リポジトリの一覧
 #talker.pyについて
 * データをトピックに送信するためのパブリッシャーを持つノードである。
-* 数字をカウントしてトピック（'/countup')を通じて送信する。
+* 数字をカウントしてトピック（`/countup`)を通じて送信する。
 * メッセージの型は１６ビット符号付き整数
 
 #listener.pyについて
 * トピックに送信されたデータを受信するためにのサブスクライバを持つノードである。
-* トピック（'/countup')から送信されたデータを受け取り表示する。
+* トピック（`/countup`)から送信されたデータを受け取り表示する。
 
 #talk_listener.launch.pyについて
 * 複数のノードを立ち上げるlaunchファイルで、talker.pyとlistener.pyを一度に立ち上げるもの。
 
 #suuretu.py
 * パブリッシャーを持つノードである。
-* 調和数列を項の数だけ足した和の数値を'harmonic_sum'を通じて送信する。
+* 調和数列を項の数だけ足した和の数値を`harmonic_sum`を通じて送信する。
 * メッセージの型は１６ビット符号付き整数
 
 #ans.py
 * サブスクライバを持つノードである。
-* トピック（'harmonic_sum')から送られてきた数値を受け取り表示する。
+* トピック（`harmonic_sum`)から送られてきた数値を受け取り表示する。
 
 #suuretu_ans.launch.py
 * 複数のノードを立ち上げるlaunchファイルで、suuretu.pyとans.pyを一度に立ち上げるもの。
 
 ##実行手順
 
-* '~/ros2_ws$'上で'colcon build'と'source ~/.bashrc'をしてから'ros run'で実行する。
+* `~/ros2_ws$`上で`colcon build`と`source ~/.bashrc`をしてから`ros run`で実行する。
 #talkerとlistener
 
 ```bash
