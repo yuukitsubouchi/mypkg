@@ -8,6 +8,6 @@ dir=~
 cd $dir/ros2_ws
 colcon build
 source $dir/.bashrc
-timeout 20 ros2 launch mypkg suuretu_ans.launch.py > /tmp/mypkg.log
+timeout 30 ros2 launch mypkg suuretu_ans.launch.py > /tmp/mypkg.log
 cat /tmp/mypkg.log |
-grep '調和数列の和: 3.3182' /tmp/mypkg.log
+grep '調和数列の和: 3.3182, 項:15' /tmp/mypkg.log
