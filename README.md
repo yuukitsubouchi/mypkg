@@ -224,7 +224,7 @@ ros2 launch mypkg suuretu_ans.launch.launch.py
 * Ubuntu 20.04
 * ROS2 foxy
 
-# ライセンス
+# 権利関係
 * このソフトウェアパッケージは、３条項BSDライセンスの下、再頒布および使用が許可されます。
 * このパッケージのコードの一部は、下記のスライド（CC-BY-SA 4.0 by Ryuici Ueda)のものを本人の許可を得て自身の著作としたものです。
  * [ryuichiueda.github.io/my_slides/robosys_2022/lesson8](https://ryuichiueda.github.io/my_slides/robosys_2022/lesson8)
