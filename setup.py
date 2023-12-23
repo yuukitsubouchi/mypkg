@@ -24,6 +24,8 @@ setup(
         'console_scripts': [
             'talker = mypkg.talker:main',
             'listener = mypkg.listener:main',
+            'suuretu = mypkg.suuretu:main',
+            'ans = mypkg.ans:main',
         ],
     },
 )
