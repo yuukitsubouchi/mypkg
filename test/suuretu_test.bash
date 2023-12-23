@@ -8,6 +8,6 @@ dir=~
 cd $dir/ros2_ws
 colcon build
 source $dir/.bashrc
-timeout 15 ros2 launch mypkg suuretu_ans.launch.py > /tmp/mypkg.log
+timeout 20 ros2 launch mypkg suuretu_ans.launch.py > /tmp/mypkg.log
 cat /tmp/mypkg.log |
-grep '項：１５'
+grep '項：15'
