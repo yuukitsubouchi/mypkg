@@ -1,15 +1,15 @@
-# ros2
+# ros2_mypkg
 
 [![test](https://github.com/yuukitsubouchi/ros2_ws/actions/workflows/suuretu_test.yml/badge.svg)](https://github.com/yuukitsubouchi/ros2_ws/actions/workflows/suuretu_test.yml)
 [![test](https://github.com/yuukitsubouchi/ros2_ws/actions/workflows/test.yml/badge.svg)](https://github.com/yuukitsubouchi/ros2_ws/actions/workflows/test.yml)
 
 ros2のパッケージ
 
-# リポジトリの一覧
+# リポジトリ内のファイルとノードの一覧
 ## talker.pyについて
 * データをトピックに送信するためのパブリッシャーを持つノードである。
-* 数字をカウントしてトピック（`/countup`)を通じて送信する。
-* メッセージの型は１６ビット符号付き整数
+	* 数字をカウントしてトピック（`/countup`)を通じて送信する。
+	* メッセージの型は１６ビット符号付き整数
 
 ## listener.pyについて
 * トピックに送信されたデータを受信するためにのサブスクライバを持つノードである。
@@ -21,8 +21,8 @@ ros2のパッケージ
 ## suuretu.pyについて
 * パブリッシャーを持つノードである。
 * 調和数列を項の数だけ足した和の数値を`harmonic_sum`を通じて送信する。
-* メッセージの型は１６ビット符号付き整数
-* 送られる数値を表示する。
+	* メッセージの型は１６ビット符号付き整数
+	* 送られる数値を表示する。
 
 ## ans.pyについて
 * サブスクライバを持つノードである。
@@ -35,17 +35,19 @@ ros2のパッケージ
 
 * `colcon build`と`source ~/.bashrc`をしてから`ros2 run`で実行する。
 ## talkerとlistener
+* `ros2 run`で実行する方法
 
 ```bash
 ros2 run mypkg talker
 ```
-* 上のプログラムを実行すると何も表示されない。
-* 終了するときは`Ctrl+C`である。
+上のプログラムを実行すると何も表示されない。
+終了するときは`Ctrl+C`である。
 
 ```bash
 ros2 run mypkg listener
 ```
-* 上のプログラムを実行すると以下のようになる。
+上のプログラムを実行すると以下のように表示されるようになる。
+
 ```bash
                              .
                              .
@@ -67,15 +69,16 @@ ros2 run mypkg listener
 　　　　　　　　　　　　　　 .
                              .
 ```
-
-* 終了するときは`Ctrl+C`である。
+終了するときは`Ctrl+C`である。
 
 ## talk_listen.launch
+* `ros2 launch`で実行する方法
 
 ```bash
+
 ros2 launch mypkg talk_listener.launch.py 
 ```
-* 上のプログラムを実行すると以下のようになる。
+上のプログラムを実行すると以下のように表示されるようになる。
 ```bash
 [INFO] [launch]: All log files can be found below /home/dragonet/.ros/log/2023-12-23-14-55-01-252077-Godzilla-4658
 [INFO] [launch]: Default logging verbosity is set to INFO
@@ -103,13 +106,15 @@ ros2 launch mypkg talk_listener.launch.py
                                .
 ```
 
-* 終了するときは`Ctrl+C`である。
+終了するときは`Ctrl+C`である。
 
 ## suuretuとans
+* `ros2 run`で実行する方法
+
 ```bash
 ros2 run mypkg suuretu
 ```
-* 上のプログラムを実行すると以下のようになる。
+上のプログラムを実行すると以下のように表示されるようになる。
 ```bash
 項数: 1, 調和数列の和: 1.0000
 項数: 2, 調和数列の和: 1.5000
@@ -142,12 +147,12 @@ ros2 run mypkg suuretu
               .
 
 ```
-* 終了するときは`Ctrl+C`である。
+終了するときは`Ctrl+C`である。
 
 ```bash
 ros2 run mypkg ans
 ```
-* 上のプログラムを実行すると以下のようになる。
+上のプログラムを実行すると以下のように表示されるようになる。
 ```bash
 [INFO] [1703311074.833446441] [ans]: 調和数列の和: 1.0000, 項:1
 [INFO] [1703311075.328331267] [ans]: 調和数列の和: 1.5000, 項:2
@@ -174,13 +179,15 @@ ros2 run mypkg ans
                              .
 ```
 
-* 終了するときは`Ctrl+C`である。
+終了するときは`Ctrl+C`である。
 
 ## suuretu_ans.launch
+* `ros2 launch`で実行する方法
+
 ```bash
 ros2 launch mypkg suuretu_ans.launch.launch.py
 ```
-* 上のプログラムを実行すると以下のようになる。
+上のプログラムを実行すると以下のように表示されるようになる。
 ```bash
 
 [INFO] [launch]: All log files can be found below /home/dragonet/.ros/log/2023-12-23-15-03-04-832880-Godzilla-4935
@@ -215,7 +222,7 @@ ros2 launch mypkg suuretu_ans.launch.launch.py
                                      .
 
 ```
-* 終了するときは`Ctrl+C`である。
+終了するときは`Ctrl+C`である。
 
 # 必要なソフトウェア
 * Python
