@@ -10,4 +10,4 @@ colcon build
 source $dir/.bashrc
 timeout 20 ros2 launch mypkg suuretu_ans.launch.py > /tmp/mypkg.log
 cat /tmp/mypkg.log |
-grep '項：15'
+grep '調和数列の和: 3.3182, 項:15'
