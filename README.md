@@ -236,7 +236,7 @@ ros2 launch mypkg suuretu_ans.launch.launch.py
 * このパッケージのコードの一部は、下記のスライド（CC-BY-SA 4.0 by Ryuici Ueda)のものを本人の許可を得て自身の著作としたものです。
  	* [ryuichiueda.github.io/my_slides/robosys_2022/lesson8](https://ryuichiueda.github.io/my_slides/robosys_2022/lesson8)
  	* [ryuichiueda.github.io/my_slides/robosys_2022/lesson9](https://ryuichiueda.github.io/my_slides/robosys_2022/lesson9)
- * [ryuichiueda.github.io/my_slides/robosys_2022/lesson10](https://ryuichiueda.github.io/my_slides/robosys_2022/lesson10)
+ 	* [ryuichiueda.github.io/my_slides/robosys_2022/lesson10](https://ryuichiueda.github.io/my_slides/robosys_2022/lesson10)
 
 
 
