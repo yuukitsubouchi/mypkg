@@ -31,7 +31,7 @@ ros2のパッケージ
 ## suuretu_ans.launch.pyについて
 * 複数のノードを立ち上げるlaunchファイルで、suuretu.pyとans.pyを一度に立ち上げるもの。
 
-# 実行と手順
+# 実行と手順と結果の一部
 
 * `colcon build`と`source ~/.bashrc`をしてから`ros2 run`で実行する。
 ## talkerとlistener
