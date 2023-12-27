@@ -243,14 +243,14 @@ ros2 launch mypkg suuretu_ans.launch.launch.py
 ```
 終了するときは`Ctrl+C`である。
 
-# 必要なソフトウェア
+## 必要なソフトウェア
 * Python
 
-# テスト環境
+## テスト環境
 * Ubuntu 20.04
 * ROS2 foxy
 
-# 権利関係
+## 権利関係
 * このソフトウェアパッケージは、３条項BSDライセンスの下、再頒布および使用が許可されます。
 * このパッケージのコードの一部は、下記のスライド（CC-BY-SA 4.0 by Ryuici Ueda)のものを本人の許可を得て自身の著作としたものです。
  	* [ryuichiueda.github.io/my_slides/robosys_2022/lesson8](https://ryuichiueda.github.io/my_slides/robosys_2022/lesson8)
