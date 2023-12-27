@@ -6,27 +6,27 @@
 
 ros2のパッケージ
 
-# リポジトリ内のノードの一覧
+## リポジトリ内のノードの一覧
 
-## talker.pyについて
+### talker.pyについて
 
 
 * データをトピックに送信するためのパブリッシャーを持つノードである。
 	* 数字をカウントしてトピック（`/countup`)を通じて送信する。
 	* メッセージの型は１６ビット符号付き整数
 
-## listener.pyについて
+### listener.pyについて
 
 
 * トピックに送信されたデータを受信するためにのサブスクライバを持つノードである。
 	* トピック（`/countup`)から送信されたデータを受け取り表示する。
 
-## talk_listener.launch.pyについて
+### talk_listener.launch.pyについて
 
 
 * 複数のノードを立ち上げるlaunchファイルで、talker.pyとlistener.pyを一度に立ち上げるもの。
 
-## suuretu.pyについて
+### suuretu.pyについて
 
 
 * パブリッシャーを持つノードである。
@@ -34,21 +34,21 @@ ros2のパッケージ
 	* メッセージの型は１６ビット符号付き整数
 	* 送られる数値を表示する。
 
-## ans.pyについて
+### ans.pyについて
 
 
 * サブスクライバを持つノードである。
 	* トピック（`harmonic_sum`)から送られてきた数値を受け取り表示する。
 
-## suuretu_ans.launch.pyについて
+### suuretu_ans.launch.pyについて
 
 * 複数のノードを立ち上げるlaunchファイルで、suuretu.pyとans.pyを一度に立ち上げるもの。
 
-# 実行と手順と結果の一部
+## 実行と手順と結果の一部
 
 * `colcon build`と`source ~/.bashrc`をしてから`ros2 run`で実行する。
 
-## talkerとlistener
+### talkerとlistener
 
 
 * `ros2 run`で実行する方法
@@ -87,7 +87,7 @@ ros2 run mypkg listener
 ```
 終了するときは`Ctrl+C`である。
 
-## talk_listen.launch
+### talk_listen.launch
 
 * `ros2 launch`で実行する方法
 
@@ -125,7 +125,7 @@ ros2 launch mypkg talk_listener.launch.py
 
 終了するときは`Ctrl+C`である。
 
-## suuretuとans
+### suuretuとans
 
 * `ros2 run`で実行する方法
 
@@ -199,7 +199,7 @@ ros2 run mypkg ans
 
 終了するときは`Ctrl+C`である。
 
-## suuretu_ans.launch
+### suuretu_ans.launch
 
 * `ros2 launch`で実行する方法
 
