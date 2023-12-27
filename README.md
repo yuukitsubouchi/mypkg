@@ -3,38 +3,48 @@
 [![test](https://github.com/yuukitsubouchi/ros2_ws/actions/workflows/suuretu_test.yml/badge.svg)](https://github.com/yuukitsubouchi/ros2_ws/actions/workflows/suuretu_test.yml)
 [![test](https://github.com/yuukitsubouchi/ros2_ws/actions/workflows/test.yml/badge.svg)](https://github.com/yuukitsubouchi/ros2_ws/actions/workflows/test.yml)
 
+
 ros2のパッケージ
 
 # リポジトリ内のノードの一覧
+
 ## talker.pyについて
+
 * データをトピックに送信するためのパブリッシャーを持つノードである。
 	* 数字をカウントしてトピック（`/countup`)を通じて送信する。
 	* メッセージの型は１６ビット符号付き整数
 
 ## listener.pyについて
+
 * トピックに送信されたデータを受信するためにのサブスクライバを持つノードである。
 * トピック（`/countup`)から送信されたデータを受け取り表示する。
 
 ## talk_listener.launch.pyについて
+
 * 複数のノードを立ち上げるlaunchファイルで、talker.pyとlistener.pyを一度に立ち上げるもの。
 
 ## suuretu.pyについて
+
 * パブリッシャーを持つノードである。
 * 調和数列を項の数だけ足した和の数値を`harmonic_sum`を通じて送信する。
 	* メッセージの型は１６ビット符号付き整数
 	* 送られる数値を表示する。
 
 ## ans.pyについて
+
 * サブスクライバを持つノードである。
 * トピック（`harmonic_sum`)から送られてきた数値を受け取り表示する。
 
 ## suuretu_ans.launch.pyについて
+
 * 複数のノードを立ち上げるlaunchファイルで、suuretu.pyとans.pyを一度に立ち上げるもの。
 
 # 実行と手順と結果の一部
 
 * `colcon build`と`source ~/.bashrc`をしてから`ros2 run`で実行する。
+
 ## talkerとlistener
+
 * `ros2 run`で実行する方法
 
 ```bash
@@ -66,12 +76,13 @@ ros2 run mypkg listener
 [INFO] [1703310442.687637618] [listener]: Listen: 22
 [INFO] [1703310443.187523900] [listener]: Listen: 23
                              .
-　　　　　　　　　　　　　　 .
+                             .
                              .
 ```
 終了するときは`Ctrl+C`である。
 
 ## talk_listen.launch
+
 * `ros2 launch`で実行する方法
 
 ```bash
@@ -109,6 +120,7 @@ ros2 launch mypkg talk_listener.launch.py
 終了するときは`Ctrl+C`である。
 
 ## suuretuとans
+
 * `ros2 run`で実行する方法
 
 ```bash
@@ -182,6 +194,7 @@ ros2 run mypkg ans
 終了するときは`Ctrl+C`である。
 
 ## suuretu_ans.launch
+
 * `ros2 launch`で実行する方法
 
 ```bash
