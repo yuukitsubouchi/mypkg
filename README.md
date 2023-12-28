@@ -247,6 +247,7 @@ ros2 launch mypkg suuretu_ans.launch.launch.py
 
 ## 必要なソフトウェア
 * Python
+	* テスト済みのバージョン：3.7~3.10 
 
 ## テスト環境
 * Ubuntu 22.04
