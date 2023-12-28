@@ -251,8 +251,7 @@ ros2 launch mypkg suuretu_ans.launch.launch.py
 
 ## テスト環境
 * Ubuntu 22.04
-* Ubuntu 20.04
-* ROS2 foxy
+* ROS2 humble
 
 ## 権利関係
 * このソフトウェアパッケージは、３条項BSDライセンスの下、再頒布および使用が許可されます。
