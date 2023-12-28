@@ -249,7 +249,7 @@ ros2 launch mypkg suuretu_ans.launch.launch.py
 * Python
 
 ## テスト環境
-* Ubuntu 20.04
+* Ubuntu 22.04
 * ROS2 foxy
 
 ## 権利関係
